@@ -1,0 +1,280 @@
+*{
+  margin: 0%;
+  padding: 0%;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #0a0909;
+  color: #f1eded;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  position:fixed;
+  top: 0%;
+  width: 100%;
+  height: 90px;
+  background-color: #110101;
+  flex-wrap: wrap;
+  color: #f8f5f5;
+}
+#bar{
+  display: none;
+  font-size: 25;
+  /* color: #cd0606; */
+ }
+.logo img{
+  height: 65px;
+  width: 110px;
+  /* margin-top: 15px; */
+  float: left;
+margin-left: -150px;
+border: none;
+}
+.logo h1{
+  text-decoration:underline;
+color: aqua;
+margin-top: 20px;
+
+}
+ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul li{
+  list-style: none;
+  margin-right: 20px;
+flex-wrap: wrap;
+
+}
+ li a{
+  text-decoration: none;
+  color: aliceblue;
+  font-size: 20px;
+  margin-inline: 22%;
+}
+.main{
+  display: flex;
+  justify-content: center;
+  margin-top: 91px;
+}
+.main img{
+  width: 500px;
+  height: 300px;
+  /* float: right; */
+  border: none;
+}
+.text{
+  margin-top: 30px;
+  margin-right: 80px;
+ 
+}
+.main h1{
+  margin-left: 80px;
+  color: rgba(250, 213, 5, 0.917);
+}
+.main p{
+  color: aliceblue;
+  margin-top: 20px;
+  font-size: 30px;
+}
+.main button{
+  width: 150px;
+  height: 25px;
+  margin-left: 110px;
+  font-size: 15px;
+  border: none;
+  margin-top: 20px;
+  color: rgb(8, 8, 8);
+  background-color:rgba(209, 235, 15, 0.923);
+}
+.head{
+  text-align: center;
+  padding: 50px;
+  text-decoration: underline;
+
+}
+.foods{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.foodCard{
+  width: 350px;
+  padding: 10px;
+  background-color: rgb(226, 15, 99);
+  margin-inline: 20px;
+  margin-top: 20px;
+  color: #0a0909;
+}
+.foodCard img{
+  width: 100%;
+  height: 250px;
+}
+.foodCard p{
+  margin-top: 20px;
+  /* justify-content: center; */
+  text-align: center;
+  font-size: 15px;
+  text-decoration:line-through;
+}
+.foodCard button{
+  width: 120px;
+  margin-left: 110px;
+  background-color: #692c2c;
+  color: #deed0b;
+  font-size: 15px;
+  border: none;
+  height: 30px;
+  margin-top: 15px;
+}
+.reviews{
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+.reviewCard{
+  width: 350px;
+  padding: 10px;
+  height: 310px;
+  background-color:rgb(146, 121, 57);
+  margin-inline: 20px;
+  margin-top: 20px;
+  color: hsl(136, 95%, 49%);
+}
+.reviewCard img{
+  height: 270px;
+  width: 100%;
+}
+.reviewCard p{
+  text-align: center;
+  font-size: 17px;
+}
+.trends{
+  width: 900px;
+  height: 300px;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  /* justify-content: center; */
+  overflow: hidden;
+
+}
+  .trendFood{
+  display:flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  margin: auto;
+  overflow: hidden;
+  transition: all 1s ease;
+}
+.trendFood img{
+  width: 240px;
+  height: 240px;
+  margin-inline: 12px;
+}
+ .blogs{
+  display: flex;
+  justify-content: center;
+flex-wrap: wrap;
+ }
+ .blogCard{
+  width: 300px;
+  height: 280px;
+  background-color: #f1eded;
+  color: #000;
+  margin-inline: 22px;
+  padding: 11px;
+  margin-top: 20px;
+ }
+ .blogCard img{
+  width:100%;
+  height: 170px;
+ }
+ .blogCard a{
+  padding: 4px 12px;
+  background-color: orange;
+  color: #f1eded;
+  text-decoration: none;
+  position: relative;
+  top: 10px;
+ }
+ .footer{
+  display: flex;
+  justify-content: space-around;
+  background-color: #0a0909;
+  color: #f1eded;
+  padding: 45px;
+  margin-top: 60px;
+  flex-wrap: wrap;
+ }
+ .text {
+  margin-top: 20px;
+ }
+ .text p{
+  margin-top: 11px;
+ }
+ .text h3 {
+  color: aqua;
+  text-decoration: underline;
+  /* font-size: 20px; */
+ }
+@media screen and (max-width:1100px){
+  .main{
+    display: block;
+    text-align: center;
+  }
+  .main img{
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width:920px){
+  .trends{
+      width: 90%;
+  }
+  .trendFood img{
+    width: 200px;
+    margin-inline:6px;
+  }
+}
+@media screen and (max-width:670px){
+  .trends{
+      width: 90%;
+  }
+  .trendFood img{
+    width: 120px;
+    width: 80px;
+    margin-inline:3px;
+  }
+}
+@media screen and (max-width:750px){
+  .main img{
+    width: 90%;
+    border-radius: 10px;
+  }
+  .main h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width:750px) {
+  ul li{
+    display: none;
+  }
+  #bar{
+    display: block;
+  }
+  .logo h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-left: 70px;
+  }
+}
+@media screen and (max-width:1050px) {
+  .logo img{
+ display: none;
+  }
+}
